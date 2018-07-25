@@ -29,7 +29,9 @@ export default class App extends React.Component {
         <GifDisplay 
           action={this.state.action}
         />
-        <ResetButton settings={this.state} handleReset={setting => {this.setState({emotion: setting, action: setting});}}/>
+        <ResetButton 
+          settings={this.state} 
+          handleReset={setting => {this.setState({emotion: setting, action: setting});}}/>
       </div>
     );
   }
