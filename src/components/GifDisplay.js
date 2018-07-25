@@ -8,8 +8,8 @@ export default function GifDisplay(props){
   if(props.action === 'clapHappy'){
     return(
       <div className='gifHolder'>
-        <iframe id='clap' src="https://giphy.com/embed/97C8ATlp05AoE" /* width="180" height="144" */ frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
-        <p><a href="https://giphy.com/gifs/slow-clap-clapping-gif-97C8ATlp05AoE">via GIPHY</a></p>
+       <iframe id='clap' src="https://giphy.com/embed/l3q2XhfQ8oCkm1Ts4" /* width="480" height="343" */ frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+       <p><a href="https://giphy.com/gifs/oscars-academy-awards-oscars1990-l3q2XhfQ8oCkm1Ts4">via GIPHY</a></p>
       </div>);
   }
   if(props.action === 'shoutHappy'){
