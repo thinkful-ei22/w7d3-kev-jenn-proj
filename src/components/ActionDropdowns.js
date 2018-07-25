@@ -1,4 +1,5 @@
 import React from 'react';
+import './ActionDropdown.css';
 
 export default function ActionDropdown (props){
   
@@ -8,7 +9,7 @@ export default function ActionDropdown (props){
         <h2>
           ...and you know it...
         </h2>
-        <select className='happyAct' onChange={e => {props.handleAction(e.target.value);}}>
+        <select className='happyAct dropdown' onChange={e => {props.handleAction(e.target.value);}}>
           <option value=''>Select an Action!</option> 
           <option value='clapHappy'>Clap Your Hands!</option>
           <option value='shoutHappy'>Shout Hooray!</option>
@@ -23,7 +24,7 @@ export default function ActionDropdown (props){
         <h2>
           ...and you know it...
         </h2>
-        <select className='sadAct'>
+        <select className='sadAct dropdown'>
           <option value=''>Select an Action!</option>  
           <option value='crySad'>Cry Boo-Hoo</option>
           <option value='frownSad'>Show a Frown</option>
@@ -38,7 +39,7 @@ export default function ActionDropdown (props){
         <h2>
           ...and you know it...
         </h2>
-        <select className='angryAct'> 
+        <select className='angryAct dropdown'> 
           <option value=''>Select an Action!</option> 
           <option value='tantrumAngry'>Throw Your Stuff!!</option>
           <option value='yellAngry'>Scream and SHOUT!!</option>
@@ -49,5 +50,5 @@ export default function ActionDropdown (props){
   }
   if(props.emotion === ''){
     return <div></div>;
-}
+  }
 }

@@ -1,0 +1,22 @@
+.emotion {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 20px;
+    font-size: 25px;
+    text-align: center;
+    box-shadow: 10px 5px 10px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.happy {
+    background-color: #E3F09B;
+}
+
+.sad {
+    background-color: #87B6A7;
+}
+
+.angry {
+    background-color: #F79F79;
+}

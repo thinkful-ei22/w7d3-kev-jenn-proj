@@ -17,11 +17,11 @@ export default class App extends React.Component {
     return (
       <div className='wrapper'>
         <h1>
-          If you're....
+          If you're...
         </h1>
         <EmotionSelect 
           handleEmotion={emotion => this.setState({emotion})}
-          />
+        />
         <ActionDropdown 
           emotion={this.state.emotion}
           handleAction={action => this.setState({action})}
@@ -29,7 +29,7 @@ export default class App extends React.Component {
         <GifDisplay 
           action={this.state.action}
         />
-        <ResetButton settings={this.state} handleReset={setting => {this.setState({emotion: setting, action: setting})}}/>
+        <ResetButton settings={this.state} handleReset={setting => {this.setState({emotion: setting, action: setting});}}/>
       </div>
     );
   }
