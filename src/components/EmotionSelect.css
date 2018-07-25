@@ -1,10 +1,10 @@
 .emotion {
     width: 100px;
     height: 100px;
+    border: 0px;
     border-radius: 100%;
     margin: 20px;
     font-size: 25px;
-    text-align: center;
     box-shadow: 10px 5px 10px;
     font-family: 'Comfortaa', cursive;
 }
