@@ -2,12 +2,6 @@ import React from 'react';
 
 export default function ActionDropdown (props){
   
-
-  if(props.emotion === ''){
-    return(
-      <div></div>
-    );
-  }
   if(props.emotion === 'happy'){
     return(
       <div className='ActionDropdown'>
@@ -15,7 +9,7 @@ export default function ActionDropdown (props){
           ...and you know it...
         </h2>
         <select className='happyAct' onChange={e => {props.handleAction(e.target.value);}}>
-          <option value='0'>Select an Action!</option> 
+          <option value=''>Select an Action!</option> 
           <option value='clapHappy'>Clap Your Hands!</option>
           <option value='shoutHappy'>Shout Hooray!</option>
           <option value='jumpHappy'>Jump for Joy!</option>
@@ -30,7 +24,7 @@ export default function ActionDropdown (props){
           ...and you know it...
         </h2>
         <select className='sadAct'>
-          <option value='0'>Select an Action!</option>  
+          <option value=''>Select an Action!</option>  
           <option value='crySad'>Cry Boo-Hoo</option>
           <option value='frownSad'>Show a Frown</option>
           <option value='nappySad'>Take a Nap</option>
@@ -45,7 +39,7 @@ export default function ActionDropdown (props){
           ...and you know it...
         </h2>
         <select className='angryAct'> 
-          <option value='0'>Select an Action!</option> 
+          <option value=''>Select an Action!</option> 
           <option value='tantrumAngry'>Throw Your Stuff!!</option>
           <option value='yellAngry'>Scream and SHOUT!!</option>
           <option value='slamAngry'>Slam the Door!!</option>
@@ -53,4 +47,7 @@ export default function ActionDropdown (props){
       </div>
     );
   }
+  if(props.emotion === ''){
+    return <div></div>;
+}
 }

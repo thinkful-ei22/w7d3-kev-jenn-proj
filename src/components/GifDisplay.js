@@ -2,10 +2,7 @@ import React from 'react';
 
 export default function GifDisplay(props){
   if(props.action===''){
-    return(
-      <div>
-      </div>
-    );
+    return null;
   }
   if(props.action === 'clapHappy'){
     return(
