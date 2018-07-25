@@ -1,5 +1,5 @@
 import React from 'react';
-import ActionDropdown from './ActionDropdowns'
+import ActionDropdown from './ActionDropdowns';
 
 export default function EmotionSelect(props) {
   return (

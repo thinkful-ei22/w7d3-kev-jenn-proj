@@ -8,16 +8,22 @@ export default class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      emotion: ''
+      emotion: '',
+      action:''
     };
   }
   render(){
-  return (
-    <div>
-      <EmotionSelect handleEmotion={emotion => this.setState({emotion})}/>
-      <ActionDropdown emotion={this.state.emotion}/>
-      <GifDisplay />
-    </div>
-  );
-}
+    return (
+      <div>
+        <EmotionSelect handleEmotion={emotion => this.setState({emotion})}/>
+        <ActionDropdown 
+          emotion={this.state.emotion}
+          handleAction={action => this.setState({action})}
+        />
+        <GifDisplay 
+          action={this.state.action}
+        />
+      </div>
+    );
+  }
 }
