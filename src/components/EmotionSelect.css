@@ -9,6 +9,11 @@
     font-family: 'Comfortaa', cursive;
 }
 
+button:focus{
+    border-color: transparent!important;
+    outline: none;
+}
+
 .happy {
     background-color: #E3F09B;
 }
