@@ -15,6 +15,9 @@ export default class App extends React.Component {
   render(){
     return (
       <div>
+        <h1>
+          If you're....
+        </h1>
         <EmotionSelect handleEmotion={emotion => this.setState({emotion})}/>
         <ActionDropdown 
           emotion={this.state.emotion}
