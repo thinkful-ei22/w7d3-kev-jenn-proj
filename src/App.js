@@ -13,6 +13,7 @@ export default class App extends React.Component {
       action: ''
     };
   }
+  
   render(){
     return (
       <div className='wrapper'>
